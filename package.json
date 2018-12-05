@@ -1,0 +1,44 @@
+{
+    "name": "gql-project",
+    "version": "1.1.0",
+    "description": "A demo using graphql, serverless lambda, dynamodb and 3rd party apis",
+    "main": "graphql.js",
+    "scripts": {
+        "start:local": "concurrently --names \"OFFLINE,DYNAMODB\" -c \"bgBlue.bold,bgMagenta.bold\" \"npm run offline\" \"npm run startdb\"",
+        "startdb": "sls dynamodb start",
+        "offline": "sls offline",
+        "test": "jest"
+    },
+    "author": "Alec Taylor",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AnomalyInnovations/serverless-nodejs-starter.git"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-loader": "^7.1.4",
+        "babel-plugin-source-map-support": "^1.0.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-stage-3": "^6.24.1",
+        "concurrently": "^4.1.0",
+        "jest": "^21.2.1",
+        "serverless-dynamodb-local": "^0.2.35",
+        "serverless-offline": "^3.25.6",
+        "serverless-webpack": "^5.1.0",
+        "webpack": "^4.16.2",
+        "webpack-node-externals": "^1.6.0"
+    },
+    "dependencies": {
+        "apollo-server-lambda": "^2.2.6",
+        "aws-sdk": "^2.370.0",
+        "babel-runtime": "^6.26.0",
+        "graphql": "^14.0.2",
+        "graphql-tools": "^4.0.3",
+        "lodash": "^4.17.11",
+        "node-fetch": "^2.3.0",
+        "source-map-support": "^0.4.18",
+        "uuid": "^3.3.2"
+    }
+}

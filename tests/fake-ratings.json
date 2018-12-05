@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "beerId": 1,
+        "rating": 5,
+        "comment": "Yum, this beer is delicious"
+    },
+    {
+        "id": "2",
+        "beerId": 1,
+        "rating": 3,
+        "comment": "Nice beer, tastes better after 6"
+    }
+]
