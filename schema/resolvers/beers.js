@@ -35,7 +35,7 @@ module.exports = {
             const repo = new RatingsRepo()
             const { beerId, rating, comment = '' } = args[1].parameters
             try {
-                const result = await repo.addRating(beerId, rating, comment)
+                await repo.addRating(beerId, rating, comment)
                 return true
             } catch (err) {
                 return false
